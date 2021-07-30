@@ -1,0 +1,35 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input {
+	border: none;
+	outline: none;
+	background-color: red;
+	width: 296px;
+	height: 100px;
+	font-size: 20px;
+	border-radius: 20px;
+}
+table {
+	text-align: center;
+	background-color:white;
+	width: 300px;
+}
+button {
+	width: 50px;
+	border-radius: 50%;
+	font-size: 32px;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 215px;
+}
