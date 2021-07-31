@@ -13,11 +13,11 @@ body {
 input {
 	border: none;
 	outline: none;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.433);
 	width: 296px;
 	height: 100px;
 	font-size: 20px;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 }
 td,
 th {
@@ -27,7 +27,7 @@ th {
 }
 
 table {
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	text-align: center;
 	background-color: black;
 	width: 300px;
