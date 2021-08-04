@@ -6,8 +6,10 @@ body {
 body {
 	background-image: url(Subtle-Prism.svg);
 	background-repeat: no-repeat;
-	/* background-size: cover; */
-	height: 100vh;
+	min-height: 100vh;
+	background-size: cover;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
 input {
@@ -32,9 +34,6 @@ table {
 	background-color: black;
 	width: 300px;
 }
-.diff {
-	/* background-color: rgba(61, 61, 61, 0.378); */
-}
 button {
 	width: 50px;
 	font-size: 32px;
@@ -47,4 +46,60 @@ button {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 215px;
+}
+
+.toggle {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 52px;
+	background-color: white;
+	border-radius: 30px;
+	border: 2px solid gray;
+}
+
+.toggle:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+	top: 1px;
+	left: 1px;
+	transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+	left: 49px;
+	background-color: white;
+}
+
+.checkbox:checked + .toggle {
+	background-color: black;
+}
+
+.checkbox {
+	display: none;
+}
+body.darkMode {
+	background-image: url(dark.svg);
+}
+
+.darkMode h1 {
+	color: white;
+}
+
+.darkMode span {
+	display: none;
+}
+.white {
+	display: none;
+}
+.darkMode .white {
+	display: inline;
+	color: white;
+}
+.darkMode #screen {
+	background-color: white;
 }

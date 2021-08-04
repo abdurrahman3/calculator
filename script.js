@@ -1,5 +1,7 @@
 let screen = document.getElementById("screen");
 let buttons = document.querySelectorAll("button");
+let changeColor = document.getElementById("switch");
+let text = document.getElementById("mode");
 for (item of buttons) {
 	item.addEventListener("click", (e) => {
 		buttonText = e.target.innerText;
@@ -15,3 +17,10 @@ for (item of buttons) {
 		}
 	});
 }
+function colorChange() {
+	document.body.classList.toggle("darkMode");
+	// text.innerHTML = "WHITE MODE";
+	// text.classList. = "white";
+	// screen.classList.add("changescr");
+}
+changeColor.addEventListener("change", colorChange);
